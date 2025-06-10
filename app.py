@@ -2,6 +2,12 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 from ultralytics import YOLO
+import streamlit as st
+import pkg_resources
+
+st.write("✅ Installed packages:")
+for pkg in pkg_resources.working_set:
+    st.write(f"- {pkg.key} ({pkg.version})")
 
 
 
