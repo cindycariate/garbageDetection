@@ -1,4 +1,4 @@
 streamlit
-Pillow
-numpy
 ultralytics
+numpy
+pillow
