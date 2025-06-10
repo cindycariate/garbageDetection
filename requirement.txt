@@ -1,4 +1,4 @@
 streamlit
-ultralytics
+Pillow
 numpy
-pillow
+ultralytics
