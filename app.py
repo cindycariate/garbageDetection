@@ -1,18 +1,9 @@
 import streamlit as st
+st.set_page_config(page_title="Garbage Detection", layout="centered")  # ← move this RIGHT after importing Streamlit
+
 from PIL import Image
 import numpy as np
 from ultralytics import YOLO
-import streamlit as st
-import pkg_resources
-
-st.write("✅ Installed packages:")
-for pkg in pkg_resources.working_set:
-    st.write(f"- {pkg.key} ({pkg.version})")
-
-
-
-# Page config
-st.set_page_config(page_title="Garbage Detection", layout="centered")
 
 # Add this at the top of your app
 st.markdown(
@@ -37,6 +28,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 # Title with emoji
