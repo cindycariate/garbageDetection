@@ -43,7 +43,11 @@ model = YOLO("best.pt")
 with st.sidebar:
     st.header("Options")
     option = st.radio("Choose input method:", (" Upload Image", " Use Camera"))
-    st.info("Select how you want to input the image for detection.")
+    st.markdown("""
+    <div style="background-color:#00a86b; padding:10px; border-radius:5px; color:white;">
+        Select how you want to input the image for detection.
+    </div>
+    """, unsafe_allow_html=True)
 
 # Image input
 image = None
